@@ -1,5 +1,5 @@
 @Entity
-
+@NamedQuery(name = Product.FIND_BY_PID, query = "SELECT PID FROM Product p")
 public class Product
 {
 
@@ -12,5 +12,6 @@ private String productName;
 @Column(length = 300, nullable = false)
 private String productDesc;
 
-
+//Constructors
+//Getters and setters methods
 }
