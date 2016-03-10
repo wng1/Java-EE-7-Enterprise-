@@ -3,7 +3,7 @@ import javax.persistence.*;
 
 
 @Entity
-@EntityListeners({DataEntryValidationListener.class})
+@EntityListeners(DataEntryValidationListener.class)  {} with more than 1
 
 public class Customer implements Serializable
 {
