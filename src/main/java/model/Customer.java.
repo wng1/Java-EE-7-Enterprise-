@@ -1,5 +1,5 @@
 @Entity
-
+@EntityListeners({DataEntryValidationListener.class})
 public class Customer implements Serializable
 {
 @Column(name = "PID", updatable = false; nullable = false)
