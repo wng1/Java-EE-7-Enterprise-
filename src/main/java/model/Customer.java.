@@ -24,6 +24,9 @@ private String lastName;
 @Temporal(TemporalType.DATE)
 private Date custCreation;
 
+@Transient
+private Integer age;  //future implements (embeddable class annotation)
+
 //Constructors
 //getters and setter methods
 //constants
