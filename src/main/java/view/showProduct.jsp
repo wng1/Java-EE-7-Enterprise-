@@ -20,8 +20,24 @@
 </ui:define>
 
 
-//navbar.xhtml
+//resource/template/navbar.xhtml
 <div class="create a stylesheet">
 <h1><ui:insert name="header"/><h1>
 <h2><ui:insert name="subheading"/><h2>
 </div>
+
+//resource/template/navbarTemplate.xhtml
+
+
+<ui:define name="navigation">
+
+<div class="style1"> //apply a style to this nav bar
+
+<li><h3>
+<h:link outcome="/order/showproducts" value="LinkPage1">
+<f:param name="productName" value="LinkPage1"/>
+</h:link>
+</h3></li>
+
+</div>
+</ui:define>
