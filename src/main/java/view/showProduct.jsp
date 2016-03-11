@@ -13,17 +13,24 @@
   <f:viewAction action="#{productBean.findProducts}"/>
 </f:metadata>   //This will list the products name when clicked by the user
 
-<ui:param name="header" value="#{productBean.productName}"> //This will print the product name of the above action
+<ui:define name="header" value="#{productBean.productName}"> </ui:define>
+//This will print the product name of the above action
 
 <ui:define name="subheading">
 <h:outputText value="#{productBean.products = null | productBean.product.size() == 0"/>
 </ui:define>
+
+<ui:define name="main">
+<h:dataTable value="#{productBean.products}" rendered="#{productBean.products.size() > 0}" styleClass="table">
+
+
 
 
 //resource/template/navbar.xhtml
 <div class="create a stylesheet">
 <h1><ui:insert name="header"/><h1>
 <h2><ui:insert name="subheading"/><h2>
+<ui:insert name="main"/>
 </div>
 
 //resource/template/navbarTemplate.xhtml
