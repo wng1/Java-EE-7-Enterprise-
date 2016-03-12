@@ -1,5 +1,6 @@
 //Once created, create a template and use these to produce a front view
 
+//showProduct.jsp
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
@@ -21,8 +22,20 @@
 </ui:define>
 
 <ui:define name="main">
-<h:dataTable value="#{productBean.products}" rendered="#{productBean.products.size() > 0}" styleClass="table">
 
+<h:dataTable value="#{productBean.products}" var="nameOfproducts"rendered="#{productBean.products.size() > 0}" styleClass="table
+<h:column>
+<h:link outcome="showproducts" includeViewParam="true" value="#{nameOfproducts.name}">
+<f:param name="pid" value="#{nameOfproducts.id}"/>
+</h:link>
+</h:column>
+
+<h:column>
+<h:outputTest value="#{nameOfproducts.description}"/>
+</h:column>
+
+</h:dataTable>
+</ui:define>
 
 
 
