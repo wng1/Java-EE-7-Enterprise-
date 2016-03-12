@@ -23,7 +23,7 @@
 
 <ui:define name="main">
 
-<h:dataTable value="#{productBean.products}" var="nameOfproducts"rendered="#{productBean.products.size() > 0}" styleClass="table
+<h:dataTable value="#{productBean.products}" var="nameOfproducts"rendered="#{productBean.products.size() > 0}" styleClass="table>
 <h:column>
 <h:link outcome="showproducts" includeViewParam="true" value="#{nameOfproducts.name}">
 <f:param name="pid" value="#{nameOfproducts.id}"/>
