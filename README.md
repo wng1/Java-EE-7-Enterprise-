@@ -2,4 +2,4 @@
 
 Portfolio  - Supply Chain Management System (Web)
 
-Extension to my personal project using Java EE
+Extension to my personal project using Java EE.
