@@ -10,6 +10,7 @@
 <h:outputLabel id="firstNameLabel" for="firstName" value="#{messages,firstNameLabel}" />
 //message.properties = firstNameLabel=First Name
 
+//faces-config.xml - include the dependency for this. 
 
 
 //utilise inputSecret when creating password
