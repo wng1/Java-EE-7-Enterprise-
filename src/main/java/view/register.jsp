@@ -13,6 +13,13 @@
 //faces-config.xml - include the dependency for this. 
 
 
+//Alternative would be to use an outputText
+//Support internalisation support
+
+<h:outputText value="i18n.firstName"/>
+<h:inputText id="firstName" value="#{Customer.user.firstname}"/>
+
+
 //utilise inputSecret when creating password
 
 <h:commandButton value="Submit" />
