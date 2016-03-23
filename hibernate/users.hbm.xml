@@ -7,6 +7,7 @@
 
 <class name="Users" table="Users">
 <meta attribute="class-description"> This class entity contains the important attributes of the users</meta>
+<cache usage="read-write"/>
 <id name="id" type="int" column="id"><generator class="native"/></id>
 
 <property name="firstName" column="first_name" type="string"/>
