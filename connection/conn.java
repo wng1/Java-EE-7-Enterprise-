@@ -19,7 +19,7 @@ Reader r = new InputStreamReader(buffer);
 int c;
 while ((c = r.read()) != -1)
 {
-  System.out.println((char) c;
+  System.out.println((char) c);
 }
 } catch (MalformedURLException ex)
 {
