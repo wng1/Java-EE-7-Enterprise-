@@ -1,7 +1,7 @@
 import java.net.*;
 import java.io.*;
 
-public class LowPortScanner 
+public class portListener
 {
 public static void main(String[] args) 
 {
@@ -17,9 +17,10 @@ catch (UnknownHostException ex)
 {
 System.err.println(ex);
 break;
-} catch (IOException ex) 
+}
+catch (IOException ex) 
 {
-// must not be a server on this port
+
 System.out.println("No open ports");
 }
 }
